@@ -22,20 +22,6 @@ The backend is built with **Django & Django REST Framework**. It orchestrates a 
 2.  **Classifier**: Runs a TensorFlow model (MobileNet/CNN) to determine the primary defect type.
 3.  **Detector & Reporter**: Runs YOLO to count defects, calculates a severity score, and prompts a local LLM to write a summary.
 
-## 📊 Model Performance
-
-Various architectures were trained and benchmarked for the classification task. **MobileNet** was selected as the production model due to its superior accuracy and efficiency.
-
-| Model Architecture | Test Accuracy | F1 Score (Macro) | Status |
-| :--- | :--- | :--- | :--- |
-| **MobileNet** | **95.57%** | **0.95** | 🚀 **Deployed** |
-| Custom CNN | 93.29% | 0.91 | Excellent Backup |
-| VGG19 | 84.82% | - | Overfitting Observed |
-| ResNet | 55.74% | 0.43 | Underperforming |
-| EfficientNet | 53.75% | - | Underperforming |
-
-*Note: Object Detection is handled by a custom-trained YOLOv8 model achieving ~0.60 mAP50.*
-
 ## 🛠️ Tech Stack
 
 * **Backend Framework**: Django 5.2, Django REST Framework
@@ -54,7 +40,7 @@ Various architectures were trained and benchmarked for the classification task. 
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/yourusername/road-damage-detection.git](https://github.com/yourusername/road-damage-detection.git)
-cd road-damage-detection
+git clone [https://github.com/Frankenstein452/RoadResearchProject](https://github.com/Frankenstein452/RoadResearchProject)
+cd RoadResearchProject
 
 pip install -r requirements.txt
