@@ -89,3 +89,17 @@ echo "MODEL_PATH2=path/to/your/yolo_best.pt" >> .env
 echo "SECRET_KEY=your_django_secret_key" >> .env
 echo "DEBUG=True" >> .env
 ```
+
+## 7. Database Setup
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+## 8. Run the Server
+Ensure your Ollama instance is running (Step 5), then start the Django server:
+
+```bash
+python manage.py runserver
+```
