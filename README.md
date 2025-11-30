@@ -72,3 +72,20 @@ pip install -r requirements.txt
 ```bash
 python.exe -m pip install --upgrade pip
 ```
+
+## 5. Run ollama
+
+```bash
+# open cmd terminal & activate ollama
+ollama run llama3.2
+```
+
+## 6. Environment Configuration
+Add paths to your trained models in .env file:
+
+```bash
+echo "MODEL_PATH=path/to/your/mobilenet_model.h5" >> .env
+echo "MODEL_PATH2=path/to/your/yolo_best.pt" >> .env
+echo "SECRET_KEY=your_django_secret_key" >> .env
+echo "DEBUG=True" >> .env
+```
