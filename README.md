@@ -38,9 +38,37 @@ The backend is built with **Django & Django REST Framework**. It orchestrates a 
 * [Ollama](https://ollama.com/) installed and running (for GenAI features).
 * Git
 
+# 🛠️ Getting Started
+
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/Frankenstein452/RoadResearchProject](https://github.com/Frankenstein452/RoadResearchProject)
-cd RoadResearchProject
+git clone https://github.com/Frankenstein452/RoadResearchProject
+```
+## 2. Go to the Agent Directory
 
+```bash
+cd RoadResearchProject
+```
+## 3. Set Up Environment
+
+```bash
+python -m venv venv
+
+# windows
+.\venv\Scripts\activate
+
+# macOS/Linux
+source venv/bin/activate
+```
+
+## 4. Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
+
+## 4. Upgrade PIP version
+
+```bash
+python.exe -m pip install --upgrade pip
+```
