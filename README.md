@@ -8,7 +8,7 @@ A comprehensive solution for automated road inspection. This project combines **
 
 * **Hybrid AI Analysis**:
     * **Classification**: Classifies images into *Crack*, *Pothole*, or *Surface Erosion* using custom-trained CNNs and Transfer Learning models.
-    * **Object Detection**: Localizes and counts multiple defects per image using **YOLOv8**.
+    * **Object Detection**: Localizes and counts multiple defects per image using **YOLOv8** and **YOLOv12** (see `models/YOLOv8.ipynb` and `models/YOLOv12.ipynb`).
 * **Smart Quality Control**: Automatically detects lighting conditions (e.g., "Very Low Light", "Bright Light") to ensure image suitability before processing.
 * **Generative AI Reporting**: Integrates **Llama 3.2** (via Ollama) to generate human-readable, professional municipal reports based on damage severity scores.
 * **Live Video Streaming**: Supports real-time inference on video streams (e.g., IP Webcam) with MJPEG streaming of annotated frames.
