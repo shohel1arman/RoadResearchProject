@@ -67,37 +67,38 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## 4. Upgrade PIP version
+## 5. Upgrade PIP version
 
 ```bash
-python.exe -m pip install --upgrade pip
+python -m pip install --upgrade pip
 ```
 
-## 5. Run ollama
+## 6. Run ollama
 
 ```bash
 # open cmd terminal & activate ollama
 ollama run llama3.2
 ```
 
-## 6. Environment Configuration
+## 7. Environment Configuration
 Add paths to your trained models in .env file:
 
 ```bash
 echo "MODEL_PATH=path/to/your/mobilenet_model.h5" >> .env
 echo "MODEL_PATH2=path/to/your/yolo_best.pt" >> .env
+echo "ROBOFLOW_API_KEY=your_roboflow_api_key" >> .env
 echo "SECRET_KEY=your_django_secret_key" >> .env
 echo "DEBUG=True" >> .env
 ```
 
-## 7. Database Setup
+## 8. Database Setup
 
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-## 8. Run the Server
+## 9. Run the Server
 Ensure your Ollama instance is running (Step 5), then start the Django server:
 
 ```bash
